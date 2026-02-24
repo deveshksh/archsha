@@ -1,0 +1,107 @@
+[
+  {
+    "id": "proj-celestial-nocturne",
+    "slug": "celestial-nocturne",
+    "title": "Celestial Nocturne",
+    "subtitle": "Runway gown embroidery program",
+    "year": "2025",
+    "roles": ["designer", "manager"],
+    "tags": ["beadwork", "sequins", "gradient", "couture"],
+    "techniques": ["Luneville Hook", "Micro Sequin Degrade"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Dark textile with reflective embellishment"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Couture gown detail under dramatic atelier lighting"
+    },
+    "overview": "A midnight silk silhouette animated by sequins, crystals, and thread gradients that moved like a constellation.",
+    "challenge": "Translate celestial references into embroidery that stayed fluid and lightweight for movement.",
+    "approach": "Mapped embellishment density in zones, balancing highlight points with breathable negative space.",
+    "outcome": "Delivered final pieces across three fittings with zero rework in the final two rounds.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Macro view of tonal sequin embroidery"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Hand embroidery tools on atelier table"
+      }
+    ]
+  },
+  {
+    "id": "proj-gilded-botanical",
+    "slug": "gilded-botanical",
+    "title": "Gilded Botanical",
+    "subtitle": "Couture jacket capsule",
+    "year": "2024",
+    "roles": ["designer"],
+    "tags": ["goldwork", "botanical", "metallic"],
+    "techniques": ["Goldwork Relief", "Corded Couching"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Textured gold embroidery close-up"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Tailored couture piece with ornate embroidery"
+    },
+    "overview": "A study in raised metallic flora layered across tailored couture jackets.",
+    "challenge": "Create relief and light play while preserving drape at shoulder and sleeve junctions.",
+    "approach": "Built relief hierarchy with corded channels and selective padding for controlled projection.",
+    "outcome": "Collection featured in seasonal showroom and adopted as a repeat client custom request.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Embroidery frame with metallic thread"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Atelier fabric swatches and gold trims"
+      }
+    ]
+  },
+  {
+    "id": "proj-porcelain-garden",
+    "slug": "porcelain-garden",
+    "title": "Porcelain Garden",
+    "subtitle": "Bridal couture ensemble",
+    "year": "2023",
+    "roles": ["designer", "manager"],
+    "tags": ["bridal", "pearls", "floral", "heritage"],
+    "techniques": ["Luneville Hook", "Goldwork Relief"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Soft floral embroidery with pearl details"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Bridal couture look with ornate handcrafted details"
+    },
+    "overview": "Hand-layered pearl and floral compositions inspired by antique porcelain painting.",
+    "challenge": "Maintain visual softness while coordinating multiple artisan teams for delivery milestones.",
+    "approach": "Defined technique ownership by panel and introduced color-calibrated sample cards.",
+    "outcome": "Completed full set ahead of deadline with consistent stitch language across all garment sections.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Pearl and floral threadwork macro detail"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1800&q=80",
+        "alt": "White embroidery panels arranged for review"
+      }
+    ]
+  }
+]

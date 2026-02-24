@@ -1,0 +1,87 @@
+.project-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(156, 137, 106, 0.23);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.project-card__image-wrap {
+  display: block;
+  overflow: hidden;
+}
+
+.project-card__image-wrap img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform var(--motion-slow) var(--ease-luxury);
+}
+
+.project-card:hover .project-card__image-wrap img {
+  transform: scale(1.035);
+}
+
+.project-card__body {
+  padding: var(--space-md);
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.project-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  color: var(--color-subtle-ink);
+  font-size: var(--step--1);
+}
+
+.project-card__title {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+}
+
+.technique-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.technique-card {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  background: color-mix(in srgb, var(--color-panel) 65%, var(--color-white) 35%);
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.technique-card__category {
+  font-size: var(--step--1);
+  color: var(--color-accent);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .technique-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-grid .project-card:nth-child(3n + 2) {
+    transform: translateY(2rem);
+  }
+}

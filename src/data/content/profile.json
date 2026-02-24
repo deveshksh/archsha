@@ -1,0 +1,22 @@
+{
+  "name": "Archana Shaji",
+  "title": "Embroidery Designer & Embroidery Manager",
+  "heroQuote": "Embroidery is architecture made from thread, light, and patience.",
+  "intro": "I design and direct haute couture embroidery programs that balance experimental artistry with atelier execution discipline.",
+  "location": "Paris / Mumbai",
+  "email": "atelier@archanashaji.com",
+  "social": [
+    { "label": "Instagram", "url": "https://instagram.com" },
+    { "label": "LinkedIn", "url": "https://linkedin.com" }
+  ],
+  "philosophy": [
+    "I treat every panel as a composition of texture, density, and reflection.",
+    "Luxury is communicated through restraint, consistency, and finishing details.",
+    "Management is a creative medium: planning, sourcing, and handover quality shape the final garment."
+  ],
+  "managementHighlights": [
+    "Led multi-atelier embroidery production across couture and red-carpet timelines.",
+    "Built technique documentation systems to improve repeatability and quality control.",
+    "Directed sampling pipelines from concept drawing to final fitting approvals."
+  ]
+}

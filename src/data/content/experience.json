@@ -1,0 +1,23 @@
+[
+  {
+    "id": "exp-01",
+    "period": "2022 — Present",
+    "role": "Embroidery Manager",
+    "company": "Maison Atelier Lumiere",
+    "summary": "Oversee sampling strategy, artisan scheduling, and hand-finishing quality review across couture capsules."
+  },
+  {
+    "id": "exp-02",
+    "period": "2018 — 2022",
+    "role": "Senior Embroidery Designer",
+    "company": "Studio Fil d'Or",
+    "summary": "Developed seasonal motif systems and stitch maps for couture gowns, jackets, and veil commissions."
+  },
+  {
+    "id": "exp-03",
+    "period": "2015 — 2018",
+    "role": "Embroidery Designer",
+    "company": "Atelier Serein",
+    "summary": "Delivered concept-to-sample embroidery stories with a focus on botanical motifs and hand-applied metalwork."
+  }
+]

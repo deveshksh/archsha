@@ -1,0 +1,13 @@
+.media-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-panel);
+  border: 1px solid rgba(160, 139, 104, 0.26);
+}
+
+.media-frame img,
+.media-frame video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}

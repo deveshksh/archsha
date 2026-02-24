@@ -1,0 +1,30 @@
+[
+  {
+    "id": "tech-01",
+    "name": "Luneville Hook",
+    "category": "Surface Embroidery",
+    "description": "Fluid chain-work applied from the reverse for high-density couture finishes.",
+    "tags": ["beadwork", "chain stitch", "couture"]
+  },
+  {
+    "id": "tech-02",
+    "name": "Goldwork Relief",
+    "category": "Metal Thread",
+    "description": "Raised metallic detailing for sculptural motifs and directional highlights.",
+    "tags": ["metallic", "dimensional", "heritage"]
+  },
+  {
+    "id": "tech-03",
+    "name": "Micro Sequin Degrade",
+    "category": "Surface Embroidery",
+    "description": "Controlled tonal gradients that read as liquid light under runway lighting.",
+    "tags": ["sequin", "gradient", "runway"]
+  },
+  {
+    "id": "tech-04",
+    "name": "Corded Couching",
+    "category": "Structural Embroidery",
+    "description": "Architectural cord mapping to define silhouette seams and movement lines.",
+    "tags": ["couching", "structure", "haute couture"]
+  }
+]

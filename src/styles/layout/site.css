@@ -1,0 +1,108 @@
+.site-shell {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(14px);
+  background: rgba(248, 245, 240, 0.82);
+  border-bottom: 1px solid rgba(177, 160, 133, 0.26);
+}
+
+.site-header__inner {
+  min-height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.site-mark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.site-mark__name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: 1;
+}
+
+.site-mark__meta {
+  font-size: var(--step--1);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-subtle-ink);
+}
+
+.site-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav__link {
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-subtle-ink);
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.site-nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-base) var(--ease-luxury);
+}
+
+.site-nav__link:hover::after,
+.site-nav__link--active::after {
+  transform: scaleX(1);
+}
+
+.site-main {
+  flex: 1;
+}
+
+.site-footer {
+  padding-block: var(--space-lg);
+  border-top: 1px solid var(--color-line);
+  margin-top: var(--space-2xl);
+}
+
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  color: var(--color-subtle-ink);
+  font-size: var(--step--1);
+}
+
+@media (max-width: 900px) {
+  .site-header__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-block: 0.7rem;
+  }
+}

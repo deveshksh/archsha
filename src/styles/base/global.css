@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.62;
+  color: var(--color-ink);
+  background:
+    radial-gradient(circle at 15% 18%, rgba(218, 201, 172, 0.26), transparent 40%),
+    radial-gradient(circle at 82% 8%, rgba(179, 160, 130, 0.2), transparent 36%),
+    var(--color-paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: min(100% - 2.6rem, var(--container-max));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-2xl);
+}
+
+.section-heading {
+  margin-bottom: var(--space-lg);
+  max-width: 64ch;
+}
+
+.section-heading__eyebrow {
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: var(--step--1);
+  color: var(--color-accent);
+}
+
+.section-heading__title {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  margin-bottom: var(--space-sm);
+}
+
+.section-heading__description {
+  color: var(--color-subtle-ink);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list li {
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 0.34rem 0.74rem;
+  font-size: var(--step--1);
+  color: var(--color-subtle-ink);
+  background: color-mix(in srgb, var(--color-panel) 50%, var(--color-white) 50%);
+}
+
+.empty-state {
+  color: var(--color-subtle-ink);
+  margin-top: var(--space-md);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  background: var(--color-ink);
+  color: var(--color-white);
+  padding: 0.5rem 0.8rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-accent) 70%, white 30%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: min(100% - 1.4rem, var(--container-max));
+  }
+
+  .section {
+    padding-block: var(--space-xl);
+  }
+}

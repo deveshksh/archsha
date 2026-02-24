@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.7rem 1.15rem;
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid transparent;
+  transition:
+    transform var(--motion-fast) var(--ease-luxury),
+    border-color var(--motion-base) var(--ease-luxury),
+    background-color var(--motion-base) var(--ease-luxury);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background: linear-gradient(120deg, #8e6f44, #b19974);
+  color: var(--color-white);
+}
+
+.button--ghost {
+  border-color: var(--color-line);
+  color: var(--color-ink);
+  background: rgba(255, 255, 255, 0.45);
+}
