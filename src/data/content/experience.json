@@ -3,21 +3,28 @@
     "id": "exp-01",
     "period": "2022 — Present",
     "role": "Embroidery Manager",
-    "company": "Maison Atelier Lumiere",
-    "summary": "Oversee sampling strategy, artisan scheduling, and hand-finishing quality review across couture capsules."
+    "company": "Maison Atelier Lumière",
+    "summary": "Oversee sampling strategy, artisan scheduling, and hand-finishing quality review across couture capsules. Lead a team of 18 artisans across two ateliers in Paris and Mumbai."
   },
   {
     "id": "exp-02",
     "period": "2018 — 2022",
     "role": "Senior Embroidery Designer",
     "company": "Studio Fil d'Or",
-    "summary": "Developed seasonal motif systems and stitch maps for couture gowns, jackets, and veil commissions."
+    "summary": "Developed seasonal motif systems and stitch maps for couture gowns, jackets, and veil commissions. Created technique documentation used as the studio reference standard."
   },
   {
     "id": "exp-03",
     "period": "2015 — 2018",
     "role": "Embroidery Designer",
     "company": "Atelier Serein",
-    "summary": "Delivered concept-to-sample embroidery stories with a focus on botanical motifs and hand-applied metalwork."
+    "summary": "Delivered concept-to-sample embroidery stories with a focus on botanical motifs and hand-applied metalwork. Contributed to three Paris Couture Week presentations."
+  },
+  {
+    "id": "exp-04",
+    "period": "2013 — 2015",
+    "role": "Junior Embroidery Artisan",
+    "company": "Maison Broderie Royale",
+    "summary": "Trained in Luneville hook technique, goldwork fundamentals, and atelier production workflows. Assisted senior artisans on haute couture and bridal commissions."
   }
 ]

@@ -20,6 +20,7 @@ const validators = {
     requiredString(value.heroQuote) &&
     requiredString(value.intro) &&
     requiredString(value.email),
+
   techniques: (value) =>
     Array.isArray(value) &&
     value.every(
@@ -30,6 +31,7 @@ const validators = {
         requiredString(item.description) &&
         Array.isArray(item.tags),
     ),
+
   experience: (value) =>
     Array.isArray(value) &&
     value.every(
@@ -40,6 +42,7 @@ const validators = {
         requiredString(item.company) &&
         requiredString(item.summary),
     ),
+
   projects: (value) =>
     Array.isArray(value) &&
     value.every(

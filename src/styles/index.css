@@ -1,12 +1,20 @@
+/* ═══════ Archana Shaji · Atelier Portfolio ═══════ */
+/* ── Design System ── */
 @import './base/tokens.css';
 @import './base/reset.css';
 @import './base/global.css';
+
+/* ── Layout ── */
 @import './layout/site.css';
+
+/* ── Components ── */
 @import './components/buttons.css';
 @import './components/hero.css';
 @import './components/cards.css';
 @import './components/filters.css';
 @import './components/media.css';
+
+/* ── Pages ── */
 @import './pages/project.css';
 @import './pages/about.css';
 @import './pages/contact.css';

@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { useState, useCallback, useEffect } from 'react'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import PageTransition from '../components/motion/PageTransition'
 
 const navItems = [
@@ -9,6 +10,19 @@ const navItems = [
 ]
 
 function SiteLayout() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+
+  /* Close menu on route change */
+  useEffect(() => {
+    setMenuOpen(false)
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
+  const toggleMenu = useCallback(() => {
+    setMenuOpen((prev) => !prev)
+  }, [])
+
   return (
     <div className="site-shell">
       <a className="skip-link" href="#main-content">
@@ -19,10 +33,24 @@ function SiteLayout() {
         <div className="site-header__inner container">
           <NavLink to="/" className="site-mark" aria-label="Archana Shaji home">
             <span className="site-mark__name">Archana Shaji</span>
-            <span className="site-mark__meta">Embroidery Designer & Manager</span>
+            <span className="site-mark__meta">Embroidery · Couture</span>
           </NavLink>
 
-          <nav className="site-nav" aria-label="Main navigation">
+          <button
+            className="site-menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls="main-nav"
+            aria-label="Toggle navigation"
+            onClick={toggleMenu}
+          >
+            <span className="site-menu-toggle__bar" />
+          </button>
+
+          <nav
+            id="main-nav"
+            className={`site-nav${menuOpen ? ' site-nav--open' : ''}`}
+            aria-label="Main navigation"
+          >
             {navItems.map((item) => (
               <NavLink
                 key={item.to}

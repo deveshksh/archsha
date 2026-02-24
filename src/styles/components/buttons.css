@@ -1,15 +1,22 @@
+/* ═══════ Buttons ═══════ */
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   border-radius: 999px;
-  padding: 0.7rem 1.15rem;
-  font-size: var(--step--1);
+  padding: 0.8rem 1.6rem;
+  font-size: var(--step--2);
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition:
     transform var(--motion-fast) var(--ease-luxury),
+    box-shadow var(--motion-base) var(--ease-luxury),
     border-color var(--motion-base) var(--ease-luxury),
     background-color var(--motion-base) var(--ease-luxury);
 }
@@ -18,13 +25,48 @@
   transform: translateY(-2px);
 }
 
-.button--primary {
-  background: linear-gradient(120deg, #8e6f44, #b19974);
-  color: var(--color-white);
+.button:active {
+  transform: translateY(0);
 }
 
+/* ── Primary ── */
+.button--primary {
+  background: linear-gradient(135deg, #8e6f44, #b89d6f, #a68650);
+  color: var(--color-white);
+  box-shadow: 0 4px 16px rgba(142, 111, 68, 0.25);
+}
+
+.button--primary:hover {
+  box-shadow: 0 8px 28px rgba(142, 111, 68, 0.35);
+}
+
+/* ── Ghost ── */
 .button--ghost {
   border-color: var(--color-line);
   color: var(--color-ink);
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.button--ghost:hover {
+  border-color: var(--color-accent);
+  background: rgba(159, 132, 91, 0.06);
+  box-shadow: 0 4px 16px rgba(159, 132, 91, 0.1);
+}
+
+/* ── Inline Link ── */
+.button--inline {
+  padding: 0;
+  border-radius: 0;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: var(--step--1);
+  color: var(--color-accent-dark);
+  border-bottom: 1px solid var(--color-accent-light);
+  transition: border-color var(--motion-base);
+}
+
+.button--inline:hover {
+  border-color: var(--color-accent-dark);
+  transform: none;
 }

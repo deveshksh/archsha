@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import EditorialHero from '../components/EditorialHero'
 import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/motion/Reveal'
@@ -11,7 +12,7 @@ function HomePage() {
   const techniques = getTechniques() || []
 
   useDocumentMeta({
-    title: 'Archana Shaji | Haute Couture Embroidery',
+    title: 'Archana Shaji — Haute Couture Embroidery',
     description:
       'Editorial portfolio of embroidery designer and embroidery manager Archana Shaji, featuring couture projects, techniques, and atelier process.',
   })
@@ -20,12 +21,13 @@ function HomePage() {
     <>
       <EditorialHero profile={profile} leadProject={projects[0]} />
 
+      {/* ── Featured Works ── */}
       <section className="section container">
         <Reveal>
           <SectionHeading
             eyebrow="Featured Works"
             title="Selected couture narratives"
-            description="Each project aligns material storytelling with production rigor from first sample to final fitting."
+            description="Each project aligns material storytelling with production rigor — from first sample to final fitting."
           />
         </Reveal>
 
@@ -37,24 +39,35 @@ function HomePage() {
           </div>
         ) : (
           <p className="empty-state">
-            No projects found. Add entries to <code>src/data/content/projects.json</code>.
+            No projects found.
           </p>
+        )}
+
+        {projects.length > 3 && (
+          <Reveal delay={0.2}>
+            <div style={{ textAlign: 'center', marginTop: 'var(--space-xl)' }}>
+              <Link className="button button--ghost" to="/portfolio">
+                View Full Portfolio
+              </Link>
+            </div>
+          </Reveal>
         )}
       </section>
 
+      {/* ── Technique Library ── */}
       <section className="section container">
         <Reveal>
           <SectionHeading
             eyebrow="Technique Library"
             title="Atelier capabilities"
-            description="A living index of stitch methods and finishing systems used in couture development."
+            description="A living index of stitch methods and finishing systems refined across years of couture development."
           />
         </Reveal>
 
         {techniques.length > 0 ? (
           <div className="technique-grid" role="list">
             {techniques.map((technique, index) => (
-              <Reveal key={technique.id} delay={index * 0.05}>
+              <Reveal key={technique.id} delay={index * 0.06}>
                 <article className="technique-card" role="listitem">
                   <p className="technique-card__category">{technique.category}</p>
                   <h3>{technique.name}</h3>
@@ -69,10 +82,33 @@ function HomePage() {
             ))}
           </div>
         ) : (
-          <p className="empty-state">
-            No techniques found. Add entries to <code>src/data/content/techniques.json</code>.
-          </p>
+          <p className="empty-state">No techniques found.</p>
         )}
+      </section>
+
+      {/* ── Closing CTA ── */}
+      <section className="section container">
+        <Reveal>
+          <div style={{
+            textAlign: 'center',
+            padding: 'var(--space-2xl) var(--space-md)',
+            borderTop: '1px solid var(--color-line-subtle)',
+          }}>
+            <p style={{
+              fontFamily: 'var(--font-display)',
+              fontSize: 'var(--step-2)',
+              fontWeight: 400,
+              marginBottom: 'var(--space-md)',
+              fontStyle: 'italic',
+              color: 'var(--color-subtle-ink)',
+            }}>
+              Every thread carries a decision. Every stitch tells a story.
+            </p>
+            <Link className="button button--primary" to="/contact">
+              Commission & Collaborate
+            </Link>
+          </div>
+        </Reveal>
       </section>
     </>
   )

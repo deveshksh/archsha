@@ -11,23 +11,23 @@ function FilterBar({ options, filters, onFilterChange }) {
           <option value="all">All roles</option>
           {options.roles.map((role) => (
             <option key={role} value={role}>
-              {role}
+              {role.charAt(0).toUpperCase() + role.slice(1)}
             </option>
           ))}
         </select>
       </div>
 
       <div className="filter-group">
-        <label htmlFor="tag-filter">Technique Tag</label>
+        <label htmlFor="tag-filter">Technique</label>
         <select
           id="tag-filter"
           value={filters.tag}
           onChange={(event) => onFilterChange('tag', event.target.value)}
         >
-          <option value="all">All tags</option>
+          <option value="all">All techniques</option>
           {options.tags.map((tag) => (
             <option key={tag} value={tag}>
-              {tag}
+              {tag.charAt(0).toUpperCase() + tag.slice(1)}
             </option>
           ))}
         </select>
