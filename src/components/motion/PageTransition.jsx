@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { m, useReducedMotion } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
 
@@ -7,14 +6,15 @@ function PageTransition({ children }) {
   const reducedMotion = useReducedMotion()
 
   if (reducedMotion) {
-    return children
+    return <>{children}</>
   }
 
   return (
     <m.div
       key={location.pathname}
-      initial={{ opacity: 0, y: 14 }}
+      initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}

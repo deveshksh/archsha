@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { m, useReducedMotion } from 'framer-motion'
 
-function Reveal({ children, className = '', delay = 0, y = 30 }) {
+function Reveal({ children, className = '', delay = 0, y = 30, once = true }) {
   const reducedMotion = useReducedMotion()
 
   if (reducedMotion) {
@@ -13,8 +12,12 @@ function Reveal({ children, className = '', delay = 0, y = 30 }) {
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once, amount: 0.15 }}
+      transition={{
+        duration: 0.9,
+        delay,
+        ease: [0.22, 1, 0.36, 1],
+      }}
     >
       {children}
     </m.div>

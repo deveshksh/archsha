@@ -1,8 +1,20 @@
+/* ═══════ Media Frame ═══════ */
 .media-frame {
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--color-panel);
-  border: 1px solid rgba(160, 139, 104, 0.26);
+  border: 1px solid rgba(160, 139, 104, 0.18);
+  position: relative;
+  box-shadow: var(--shadow-soft);
+}
+
+.media-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(159, 132, 91, 0.1);
+  pointer-events: none;
 }
 
 .media-frame img,
@@ -10,4 +22,14 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  transition: transform var(--motion-dramatic) var(--ease-luxury);
+}
+
+.media-frame:hover img,
+.media-frame:hover video {
+  transform: scale(1.02);
+}
+
+.media-frame--portrait img {
+  aspect-ratio: 3 / 4;
 }

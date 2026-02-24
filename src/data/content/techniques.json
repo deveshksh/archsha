@@ -3,28 +3,42 @@
     "id": "tech-01",
     "name": "Luneville Hook",
     "category": "Surface Embroidery",
-    "description": "Fluid chain-work applied from the reverse for high-density couture finishes.",
+    "description": "Fluid chain-work applied from the reverse using a tambour hook, enabling high-density couture finishes with beads, sequins, and threads in a single continuous motion.",
     "tags": ["beadwork", "chain stitch", "couture"]
   },
   {
     "id": "tech-02",
     "name": "Goldwork Relief",
     "category": "Metal Thread",
-    "description": "Raised metallic detailing for sculptural motifs and directional highlights.",
+    "description": "Raised metallic detailing for sculptural motifs and directional highlight effects. Combines padding, couching, and metal thread layering for three-dimensional surface richness.",
     "tags": ["metallic", "dimensional", "heritage"]
   },
   {
     "id": "tech-03",
     "name": "Micro Sequin Degrade",
     "category": "Surface Embroidery",
-    "description": "Controlled tonal gradients that read as liquid light under runway lighting.",
+    "description": "Controlled tonal gradients that read as liquid light under runway lighting. Uses graduated sequin sizes and density mapping to create painterly colour transitions.",
     "tags": ["sequin", "gradient", "runway"]
   },
   {
     "id": "tech-04",
     "name": "Corded Couching",
     "category": "Structural Embroidery",
-    "description": "Architectural cord mapping to define silhouette seams and movement lines.",
+    "description": "Architectural cord mapping to define silhouette seams and movement lines. Creates invisible structural reinforcement while adding surface texture and directional flow.",
     "tags": ["couching", "structure", "haute couture"]
+  },
+  {
+    "id": "tech-05",
+    "name": "Pearl Placement",
+    "category": "Embellishment",
+    "description": "Precision hand-setting of natural and cultured pearls in graduated density patterns. Requires individual tension calibration to maintain fabric softness beneath heavy surface coverage.",
+    "tags": ["pearls", "bridal", "hand-setting"]
+  },
+  {
+    "id": "tech-06",
+    "name": "Cutwork Engineering",
+    "category": "Structural Embroidery",
+    "description": "Controlled fabric removal combined with reinforcement stitching to create transparency patterns that maintain garment integrity under movement and stress.",
+    "tags": ["cutwork", "structural", "transparency"]
   }
 ]

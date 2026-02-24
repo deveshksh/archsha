@@ -10,27 +10,32 @@
     "techniques": ["Luneville Hook", "Micro Sequin Degrade"],
     "thumbnail": {
       "src": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Dark textile with reflective embellishment"
+      "alt": "Dark textile with reflective embellishment under studio lighting"
     },
     "heroMedia": {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=2200&q=80",
       "alt": "Couture gown detail under dramatic atelier lighting"
     },
-    "overview": "A midnight silk silhouette animated by sequins, crystals, and thread gradients that moved like a constellation.",
-    "challenge": "Translate celestial references into embroidery that stayed fluid and lightweight for movement.",
-    "approach": "Mapped embellishment density in zones, balancing highlight points with breathable negative space.",
-    "outcome": "Delivered final pieces across three fittings with zero rework in the final two rounds.",
+    "overview": "A midnight silk silhouette animated by thousands of sequins, crystals, and thread gradients that shift like a constellation under runway light. This piece explored the idea of celestial cartography translated into couture embroidery.",
+    "challenge": "Translate celestial references into embroidery that stayed fluid and lightweight enough for natural movement on the runway, while maintaining a sense of luminous depth.",
+    "approach": "Mapped embellishment density in anatomical zones, balancing highlight points with breathable negative space. Developed a custom degrade technique graduating from dense crystal clusters to floating singular sequins.",
+    "outcome": "Delivered final pieces across three fittings with zero rework in the final two rounds. The gown was selected for the seasonal presentation closing look.",
     "gallery": [
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1800&q=80",
-        "alt": "Macro view of tonal sequin embroidery"
+        "alt": "Macro view of tonal sequin embroidery showing degrade technique"
       },
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=1800&q=80",
-        "alt": "Hand embroidery tools on atelier table"
+        "alt": "Hand embroidery tools and materials on atelier table"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1558171813-4c088753af8f?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Close-up of crystal placement on dark silk fabric"
       }
     ]
   },
@@ -38,34 +43,34 @@
     "id": "proj-gilded-botanical",
     "slug": "gilded-botanical",
     "title": "Gilded Botanical",
-    "subtitle": "Couture jacket capsule",
+    "subtitle": "Couture jacket capsule collection",
     "year": "2024",
     "roles": ["designer"],
-    "tags": ["goldwork", "botanical", "metallic"],
+    "tags": ["goldwork", "botanical", "metallic", "heritage"],
     "techniques": ["Goldwork Relief", "Corded Couching"],
     "thumbnail": {
       "src": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Textured gold embroidery close-up"
+      "alt": "Textured gold embroidery close-up on couture jacket"
     },
     "heroMedia": {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=2200&q=80",
-      "alt": "Tailored couture piece with ornate embroidery"
+      "alt": "Tailored couture piece with ornate botanical embroidery"
     },
-    "overview": "A study in raised metallic flora layered across tailored couture jackets.",
-    "challenge": "Create relief and light play while preserving drape at shoulder and sleeve junctions.",
-    "approach": "Built relief hierarchy with corded channels and selective padding for controlled projection.",
-    "outcome": "Collection featured in seasonal showroom and adopted as a repeat client custom request.",
+    "overview": "A study in raised metallic flora layered across tailored couture jackets, using traditional goldwork techniques reimagined for a contemporary silhouette. Each motif referenced botanical illustrations from 18th-century herbariums.",
+    "challenge": "Create significant relief and directional light play while preserving precise drape at shoulder and sleeve junctions — areas where heavy embroidery typically distorts garment architecture.",
+    "approach": "Built a relief hierarchy using corded channels and selective padding for controlled projection. Each botanical element was engineered with varying stitch densities to ensure the jacket maintained its tailored line while the embroidery appeared richly three-dimensional.",
+    "outcome": "The collection was featured in the seasonal showroom presentation and adopted as a repeat client custom request, with three additional jacket commissions placed in the following quarter.",
     "gallery": [
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?auto=format&fit=crop&w=1800&q=80",
-        "alt": "Embroidery frame with metallic thread"
+        "alt": "Embroidery frame with metallic gold thread work in progress"
       },
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=1800&q=80",
-        "alt": "Atelier fabric swatches and gold trims"
+        "alt": "Atelier fabric swatches and gold trims arranged for selection"
       }
     ]
   },
@@ -80,27 +85,132 @@
     "techniques": ["Luneville Hook", "Goldwork Relief"],
     "thumbnail": {
       "src": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Soft floral embroidery with pearl details"
+      "alt": "Soft floral embroidery with pearl details on bridal fabric"
     },
     "heroMedia": {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=2200&q=80",
-      "alt": "Bridal couture look with ornate handcrafted details"
+      "alt": "Bridal couture look with ornate handcrafted floral details"
     },
-    "overview": "Hand-layered pearl and floral compositions inspired by antique porcelain painting.",
-    "challenge": "Maintain visual softness while coordinating multiple artisan teams for delivery milestones.",
-    "approach": "Defined technique ownership by panel and introduced color-calibrated sample cards.",
-    "outcome": "Completed full set ahead of deadline with consistent stitch language across all garment sections.",
+    "overview": "Hand-layered pearl and floral compositions inspired by antique porcelain painting, translated into a full bridal ensemble. The project demanded extraordinary softness and lightness despite extensive surface coverage.",
+    "challenge": "Maintain visual softness and bridal delicacy while coordinating multiple artisan teams across two ateliers to meet a compressed delivery milestone for a destination wedding.",
+    "approach": "Defined technique ownership by panel and introduced color-calibrated sample cards to ensure tonal consistency across different artisans working independently. Applied pearls in graduated density patterns inspired by ceramic glaze pooling.",
+    "outcome": "Completed full ensemble set ahead of deadline with consistent stitch language across all garment sections — bodice, veil, train, and removable cape.",
     "gallery": [
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&w=1800&q=80",
-        "alt": "Pearl and floral threadwork macro detail"
+        "alt": "Pearl and floral threadwork macro detail on organza"
       },
       {
         "type": "image",
         "src": "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=1800&q=80",
-        "alt": "White embroidery panels arranged for review"
+        "alt": "White embroidery panels arranged for quality review"
+      }
+    ]
+  },
+  {
+    "id": "proj-shadow-lattice",
+    "slug": "shadow-lattice",
+    "title": "Shadow Lattice",
+    "subtitle": "Evening wear collection embroidery",
+    "year": "2024",
+    "roles": ["manager"],
+    "tags": ["cutwork", "geometric", "transparency", "couture"],
+    "techniques": ["Luneville Hook", "Corded Couching"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Geometric embroidery pattern with transparent cutwork detail"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Evening dress with geometric architectural embroidery"
+    },
+    "overview": "An exploration of architectural geometry through controlled cutwork and structural embroidery, creating pieces that revealed skin as a design element through precise lattice patterns.",
+    "challenge": "Engineer cutwork embroidery that maintained structural integrity under movement while creating controlled transparency that would photograph well under varied lighting conditions.",
+    "approach": "Developed a reinforcement grid system using corded couching as an invisible skeleton, allowing aggressive cutwork without compromising garment stability. Each lattice module was tested for stretch tolerance before final application.",
+    "outcome": "Six-piece collection delivered on schedule with all pieces passing movement testing on the runway. Featured in three international fashion publications.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Detail of geometric cutwork revealing layered fabric beneath"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Full evening look showing lattice embroidery pattern under runway light"
+      }
+    ]
+  },
+  {
+    "id": "proj-vermillion-thread",
+    "slug": "vermillion-thread",
+    "title": "Vermillion Thread",
+    "subtitle": "Red carpet commission",
+    "year": "2023",
+    "roles": ["designer", "manager"],
+    "tags": ["threadwork", "color", "gradient", "editorial"],
+    "techniques": ["Luneville Hook", "Micro Sequin Degrade"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1558171814-59a60b9ecb6d?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Rich red threadwork embroidery with tonal gradient"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Custom red carpet gown with elaborate thread gradient embroidery"
+    },
+    "overview": "A monochromatic exploration of red — from deepest oxblood to luminous vermillion — using thread density and direction to create a painterly gradient across a full-length gown for a major film premiere.",
+    "challenge": "Create a seamless tonal gradient across 3 metres of fabric using only thread, without visible seam lines or density breaks that would appear in high-resolution photography.",
+    "approach": "Developed a 14-shade thread palette and mapped each zone to specific density values. Artisans worked panel-by-panel using calibrated reference boards to ensure gradient continuity across joins.",
+    "outcome": "The gown was worn at the Venice Film Festival and subsequently featured in Vogue Italia's couture craft editorial.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Close-up of red thread gradient showing tonal transitions"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Color calibration reference boards used during production"
+      }
+    ]
+  },
+  {
+    "id": "proj-ivory-architecture",
+    "slug": "ivory-architecture",
+    "title": "Ivory Architecture",
+    "subtitle": "Couture show finale piece",
+    "year": "2022",
+    "roles": ["designer"],
+    "tags": ["structural", "white-work", "dimensional", "couture"],
+    "techniques": ["Goldwork Relief", "Corded Couching"],
+    "thumbnail": {
+      "src": "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Dimensional white embroidery with architectural relief patterns"
+    },
+    "heroMedia": {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2200&q=80",
+      "alt": "Finale couture piece with sculptural ivory embroidery"
+    },
+    "overview": "An architectural embroidery study in monochrome ivory, creating dramatic dimensional effects through padding, relief, and controlled shadow. Designed as the closing look for a Paris Couture Week presentation.",
+    "challenge": "Achieve maximum visual drama through texture alone — without colour, metallic, or bead elements — while keeping the garment light enough for a model to wear comfortably through a full runway walk.",
+    "approach": "Engineered a layered padding system using graduated felt underlays and directional stitching to create shadow effects that animated the surface under changing light. Reduced weight by 35% by replacing traditional padding with architectural foam cores.",
+    "outcome": "Selected as the show finale look. The technique was subsequently developed into a standalone workshop module for training junior artisans.",
+    "gallery": [
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Macro detail of dimensional white stitching with shadow play"
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1494578379344-d6c710782a3d?auto=format&fit=crop&w=1800&q=80",
+        "alt": "Embroidery frame showing relief padding construction"
       }
     ]
   }

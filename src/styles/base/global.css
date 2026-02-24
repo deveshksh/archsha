@@ -1,76 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap');
-
-html {
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap');
 
 body {
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.62;
+  font-weight: 400;
+  line-height: 1.7;
   color: var(--color-ink);
-  background:
-    radial-gradient(circle at 15% 18%, rgba(218, 201, 172, 0.26), transparent 40%),
-    radial-gradient(circle at 82% 8%, rgba(179, 160, 130, 0.2), transparent 36%),
-    var(--color-paper);
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(218, 201, 172, 0.22), transparent 50%),
+    radial-gradient(ellipse at 88% 15%, rgba(179, 160, 130, 0.15), transparent 45%),
+    radial-gradient(ellipse at 50% 85%, rgba(200, 185, 160, 0.1), transparent 50%);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* ── Container ── */
 .container {
-  width: min(100% - 2.6rem, var(--container-max));
+  width: min(100% - 3rem, var(--container-max));
   margin-inline: auto;
 }
 
+.container--narrow {
+  width: min(100% - 3rem, var(--container-narrow));
+  margin-inline: auto;
+}
+
+/* ── Sections ── */
 .section {
   padding-block: var(--space-2xl);
 }
 
+.section--hero {
+  padding-top: clamp(2rem, 6vw, 6rem);
+  padding-bottom: var(--space-2xl);
+}
+
+/* ── Section Headings ── */
 .section-heading {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
   max-width: 64ch;
 }
 
 .section-heading__eyebrow {
   margin-bottom: var(--space-xs);
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: var(--step--1);
+  letter-spacing: 0.22em;
+  font-size: var(--step--2);
+  font-weight: 500;
   color: var(--color-accent);
 }
 
 .section-heading__title {
   font-family: var(--font-display);
   font-size: var(--step-2);
-  line-height: 1.1;
+  font-weight: 400;
+  line-height: 1.15;
   letter-spacing: 0.01em;
   margin-bottom: var(--space-sm);
 }
 
 .section-heading__description {
   color: var(--color-subtle-ink);
+  max-width: 55ch;
+  line-height: 1.75;
 }
 
+/* ── Tag List ── */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.45rem;
 }
 
 .tag-list li {
   border: 1px solid var(--color-line);
   border-radius: 999px;
-  padding: 0.34rem 0.74rem;
-  font-size: var(--step--1);
+  padding: 0.3rem 0.8rem;
+  font-size: var(--step--2);
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: var(--color-subtle-ink);
-  background: color-mix(in srgb, var(--color-panel) 50%, var(--color-white) 50%);
+  background: rgba(255, 255, 255, 0.6);
+  transition: all var(--motion-base) var(--ease-luxury);
 }
 
+.tag-list li:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+  background: rgba(159, 132, 91, 0.08);
+}
+
+/* ── Empty State ── */
 .empty-state {
   color: var(--color-subtle-ink);
   margin-top: var(--space-md);
+  font-style: italic;
 }
 
+/* ── Decorative Rule ── */
+.decorative-rule {
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  border: none;
+  margin: var(--space-md) 0;
+}
+
+/* ── Skip Link ── */
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -78,7 +116,10 @@ body {
   z-index: 100;
   background: var(--color-ink);
   color: var(--color-white);
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+  transition: top var(--motion-fast);
 }
 
 .skip-link:focus {
@@ -86,13 +127,20 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid color-mix(in srgb, var(--color-accent) 70%, white 30%);
-  outline-offset: 2px;
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
 }
 
+/* ── Selection ── */
+::selection {
+  background: rgba(159, 132, 91, 0.2);
+  color: var(--color-ink);
+}
+
+/* ── Responsive ── */
 @media (max-width: 767px) {
   .container {
-    width: min(100% - 1.4rem, var(--container-max));
+    width: min(100% - 1.6rem, var(--container-max));
   }
 
   .section {

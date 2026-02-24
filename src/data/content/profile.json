@@ -1,22 +1,30 @@
 {
   "name": "Archana Shaji",
   "title": "Embroidery Designer & Embroidery Manager",
-  "heroQuote": "Embroidery is architecture made from thread, light, and patience.",
-  "intro": "I design and direct haute couture embroidery programs that balance experimental artistry with atelier execution discipline.",
+  "heroQuote": "Embroidery is architecture made from thread, light, and patience — every stitch carries intention.",
+  "intro": "I design and direct haute couture embroidery programs that balance experimental artistry with atelier execution discipline. With over a decade in the couture industry, I bridge the space between creative vision and production reality.",
   "location": "Paris / Mumbai",
   "email": "atelier@archanashaji.com",
   "social": [
     { "label": "Instagram", "url": "https://instagram.com" },
-    { "label": "LinkedIn", "url": "https://linkedin.com" }
+    { "label": "LinkedIn", "url": "https://linkedin.com" },
+    { "label": "Behance", "url": "https://behance.net" }
   ],
   "philosophy": [
-    "I treat every panel as a composition of texture, density, and reflection.",
-    "Luxury is communicated through restraint, consistency, and finishing details.",
-    "Management is a creative medium: planning, sourcing, and handover quality shape the final garment."
+    "I treat every panel as a composition of texture, density, and reflection — a conversation between material and light.",
+    "Luxury is communicated through restraint, consistency, and finishing details that reveal themselves only on closer inspection.",
+    "Management is a creative medium in itself: planning, sourcing, and handover quality shape the final garment as much as the stitch."
   ],
   "managementHighlights": [
-    "Led multi-atelier embroidery production across couture and red-carpet timelines.",
-    "Built technique documentation systems to improve repeatability and quality control.",
-    "Directed sampling pipelines from concept drawing to final fitting approvals."
-  ]
+    "Led multi-atelier embroidery production across couture and red-carpet timelines for international fashion houses.",
+    "Built technique documentation systems to improve repeatability, quality control, and artisan onboarding.",
+    "Directed sampling pipelines from concept drawing to final fitting approvals, reducing rework cycles by 40%.",
+    "Coordinated cross-cultural teams spanning Paris workshops and Mumbai embroidery ateliers."
+  ],
+  "stats": {
+    "yearsOfExperience": "10+",
+    "coutureProjects": "60+",
+    "techniquesSpecialty": "12",
+    "ateliersLed": "4"
+  }
 }
