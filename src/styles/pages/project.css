@@ -2,7 +2,7 @@
 
 /* ── Header ── */
 .project-page__header {
-  padding-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
 }
 
 .project-page__eyebrow {
@@ -10,7 +10,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-2xs);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
 
 .project-page__eyebrow::before {
   content: '';
-  width: 24px;
+  width: 20px;
   height: 1px;
   background: var(--color-accent);
 }
@@ -28,23 +28,25 @@
   font-family: var(--font-display);
   font-size: var(--step-3);
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.08;
   margin-bottom: var(--space-2xs);
+  word-break: break-word;
 }
 
 .project-page__subtitle {
   color: var(--color-subtle-ink);
-  font-size: var(--step-0);
+  font-size: var(--step--1);
 }
 
 .project-page__roles {
   display: flex;
-  gap: var(--space-xs);
-  margin-top: var(--space-sm);
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-top: var(--space-xs);
 }
 
 .project-page__role-badge {
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.6rem;
   border: 1px solid var(--color-accent-light);
   border-radius: 999px;
   font-size: var(--step--2);
@@ -57,7 +59,7 @@
 /* ── Narrative ── */
 .project-page__narrative-grid {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .narrative-blocks {
@@ -66,7 +68,7 @@
 }
 
 .narrative-blocks article {
-  padding: var(--space-lg);
+  padding: var(--space-md);
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 0.7),
       rgba(240, 235, 226, 0.4));
@@ -90,13 +92,14 @@
   font-family: var(--font-display);
   font-size: var(--step-1);
   font-weight: 500;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-2xs);
   color: var(--color-ink);
 }
 
 .narrative-blocks p {
   color: var(--color-subtle-ink);
-  line-height: 1.8;
+  line-height: 1.75;
+  font-size: var(--step--1);
 }
 
 /* ── Gallery ── */
@@ -113,20 +116,43 @@
   gap: 0.4rem;
   font-size: var(--step--1);
   color: var(--color-subtle-ink);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   transition: color var(--motion-base);
+  padding: 0.4rem 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.project-page__back:hover {
+.project-page__back:active {
   color: var(--color-accent-dark);
 }
 
 .project-page__back svg {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
 }
 
 /* ═══════ Responsive ═══════ */
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .project-page__header {
+    padding-bottom: var(--space-lg);
+  }
+
+  .project-page__eyebrow::before {
+    width: 24px;
+  }
+
+  .narrative-blocks article {
+    padding: var(--space-lg);
+  }
+
+  .narrative-blocks p {
+    font-size: var(--step-0);
+  }
+}
+
 @media (min-width: 900px) {
   .project-page__narrative-grid {
     grid-template-columns: 0.75fr 1.25fr;
@@ -135,5 +161,17 @@
 
   .project-media-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small mobile */
+@media (max-width: 374px) {
+  .project-page__roles {
+    gap: 0.2rem;
+  }
+
+  .project-page__role-badge {
+    padding: 0.15rem 0.45rem;
+    font-size: 0.6rem;
   }
 }

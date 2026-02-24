@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import MediaFrame from '../components/MediaFrame'
 import Reveal from '../components/motion/Reveal'
+import ScrollFade from '../components/motion/ScrollFade'
 import SectionHeading from '../components/SectionHeading'
 import { getProjectBySlug } from '../data/contentStore'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
@@ -59,14 +60,14 @@ function ProjectPage() {
 
       {/* ── Hero Image ── */}
       <section className="container">
-        <Reveal y={30}>
+        <ScrollFade parallaxAmount={30}>
           <MediaFrame item={project.heroMedia} priority />
-        </Reveal>
+        </ScrollFade>
       </section>
 
       {/* ── Overview ── */}
       <section className="section container">
-        <Reveal>
+        <ScrollFade parallaxAmount={10} opacityRange={[0.6, 1]}>
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--step-1)',
@@ -77,7 +78,7 @@ function ProjectPage() {
           }}>
             {project.overview}
           </p>
-        </Reveal>
+        </ScrollFade>
       </section>
 
       {/* ── Narrative ── */}
@@ -87,24 +88,24 @@ function ProjectPage() {
         </Reveal>
 
         <div className="narrative-blocks">
-          <Reveal delay={0.05}>
+          <ScrollFade parallaxAmount={5} delay={0.05}>
             <article>
               <h2>Challenge</h2>
               <p>{project.challenge}</p>
             </article>
-          </Reveal>
-          <Reveal delay={0.12}>
+          </ScrollFade>
+          <ScrollFade parallaxAmount={10} delay={0.12}>
             <article>
               <h2>Approach</h2>
               <p>{project.approach}</p>
             </article>
-          </Reveal>
-          <Reveal delay={0.19}>
+          </ScrollFade>
+          <ScrollFade parallaxAmount={15} delay={0.19}>
             <article>
               <h2>Outcome</h2>
               <p>{project.outcome}</p>
             </article>
-          </Reveal>
+          </ScrollFade>
         </div>
       </section>
 
@@ -120,9 +121,9 @@ function ProjectPage() {
 
         <div className="project-media-grid">
           {project.gallery.map((item, index) => (
-            <Reveal key={`${item.src}-${index}`} delay={index * 0.08}>
+            <ScrollFade key={`${item.src}-${index}`} parallaxAmount={index % 2 === 0 ? 10 : 20} scaleFrom={1.02}>
               <MediaFrame item={item} />
-            </Reveal>
+            </ScrollFade>
           ))}
         </div>
 

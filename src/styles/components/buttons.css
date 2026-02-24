@@ -5,15 +5,17 @@
   justify-content: center;
   gap: 0.5rem;
   border-radius: 999px;
-  padding: 0.8rem 1.6rem;
+  padding: 0.75rem 1.4rem;
   font-size: var(--step--2);
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   border: 1px solid transparent;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   transition:
     transform var(--motion-fast) var(--ease-luxury),
     box-shadow var(--motion-base) var(--ease-luxury),
@@ -21,23 +23,27 @@
     background-color var(--motion-base) var(--ease-luxury);
 }
 
-.button:hover {
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .button:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .button:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.97);
 }
 
 /* ── Primary ── */
 .button--primary {
   background: linear-gradient(135deg, #8e6f44, #b89d6f, #a68650);
   color: var(--color-white);
-  box-shadow: 0 4px 16px rgba(142, 111, 68, 0.25);
+  box-shadow: 0 4px 16px rgba(142, 111, 68, 0.2);
 }
 
-.button--primary:hover {
-  box-shadow: 0 8px 28px rgba(142, 111, 68, 0.35);
+@media (hover: hover) {
+  .button--primary:hover {
+    box-shadow: 0 8px 28px rgba(142, 111, 68, 0.35);
+  }
 }
 
 /* ── Ghost ── */
@@ -48,10 +54,12 @@
   backdrop-filter: blur(8px);
 }
 
-.button--ghost:hover {
-  border-color: var(--color-accent);
-  background: rgba(159, 132, 91, 0.06);
-  box-shadow: 0 4px 16px rgba(159, 132, 91, 0.1);
+@media (hover: hover) {
+  .button--ghost:hover {
+    border-color: var(--color-accent);
+    background: rgba(159, 132, 91, 0.06);
+    box-shadow: 0 4px 16px rgba(159, 132, 91, 0.1);
+  }
 }
 
 /* ── Inline Link ── */
@@ -66,7 +74,18 @@
   transition: border-color var(--motion-base);
 }
 
-.button--inline:hover {
-  border-color: var(--color-accent-dark);
-  transform: none;
+@media (hover: hover) {
+  .button--inline:hover {
+    border-color: var(--color-accent-dark);
+    transform: none;
+  }
+}
+
+/* ── Mobile button sizing ── */
+@media (max-width: 767px) {
+  .button {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.72rem;
+    min-height: 44px;
+  }
 }

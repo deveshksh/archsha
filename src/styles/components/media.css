@@ -25,11 +25,26 @@
   transition: transform var(--motion-dramatic) var(--ease-luxury);
 }
 
-.media-frame:hover img,
-.media-frame:hover video {
-  transform: scale(1.02);
+@media (hover: hover) {
+
+  .media-frame:hover img,
+  .media-frame:hover video {
+    transform: scale(1.02);
+  }
 }
 
 .media-frame--portrait img {
   aspect-ratio: 3 / 4;
+}
+
+/* ── Mobile fullwidth edge-to-edge feel ── */
+@media (max-width: 599px) {
+  .media-frame {
+    border-radius: var(--radius-md);
+  }
+
+  .media-frame img,
+  .media-frame video {
+    aspect-ratio: 16 / 11;
+  }
 }

@@ -19,6 +19,16 @@ function SiteLayout() {
     window.scrollTo(0, 0)
   }, [location.pathname])
 
+  /* Lock body scroll when menu is open */
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+    return () => document.body.classList.remove('no-scroll')
+  }, [menuOpen])
+
   const toggleMenu = useCallback(() => {
     setMenuOpen((prev) => !prev)
   }, [])
